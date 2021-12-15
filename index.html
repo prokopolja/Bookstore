@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookstore - ehya</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-top">
+        <a href="https://olgaprokopovich.ru/Bookstore" class="logo">
+          <img src="img/Logo.svg" alt="Logo: ehya" class="logo__image">
+        </a>
+        <div class="header-left">
+          <ul class="header-nav"> 
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Рекомендации</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Книги</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Блог</a>
+            </li>
+          </ul>  
+          <button data-toggle="modal" class="button header__button">Получить</button>
+
+        </div>
+      </div>
+      <!-- /.header-top -->
+
+
+      <!-- Стилизую часть с книгой -->
+      <div class="header-bottom">
+        <div class="header-bottom__text">
+          <h1 class="bookname"><span class="colortext">Design Theory:<br></span>The Psychology of<br>Graphic Design Pricing</h1>
+          <p class="subtitle">книга мишеля янга</p>
+          <p class="info">
+            Спустя 15 лет я управляю собственной студией, выполнив тысячи проектов для крупных клиентов. Теперь я делюсь своими
+            золотыми стратегиями ценообразования на творческую работу.
+          </p>
+          <div class="buttons">
+            <button data-toggle="modal" class="button button-order">Купить сейчас</button>
+            <a href="#" class="button button-primary">Читать демо</a>
+          </div>
+          <!-- /.buttons -->
+        </div>
+        <!-- //header-bottom__text -->
+        <div class="header-bottom__book">
+          <img class="book-img" src="img/Book-image.png" alt="Book">
+        </div>
+        <!-- /.header-bottom__book -->
+      </div>
+    </div>
+    <!-- /.container -->
+  </header>
+  <!-- /.header -->
+
+  <div class="books">
+    <div class="books__container">
+      <div class="title">
+        <h2 class="title-left">Рекомендации</h2>
+        <h2 class="title-right">Топ Месяца</h2>
+      </div>
+      <div class="books-best">
+        <div class="books__recommended">
+          <div class="books__card">
+            <img class="books__img" src="img/Recommended/r-1.png" alt="icon: book">
+            <div class="card-overlay">
+              <h5 class="card-name">The World of Abstract Art</h5>
+              <p class="card-text">Art & Design</p>
+              <p class="card-price">$25.00</p>
+              <div class="card-buy">
+                <button data-toggle="modal" class="card-button">Купить</button>
+                <a href="#" class="favorites">
+                  <img src="img/heart.svg" alt="heart" class="heart">
+                </a>
+              </div>
+              
+            </div>
+            <!-- /.card-overlay -->
+          </div>
+          <!-- /.books__card -->
+          <div class="books__card">
+            <img class="books__img" src="img/Recommended/r-2.png" alt="icon: book">
+            <div class="card-overlay">
+              <h5 class="card-name">Educated : a&nbspMemoir</h5>
+              <p class="card-text">Education</p>
+              <p class="card-price">$28.00</p>
+              <div class="card-buy">
+                <button data-toggle="modal" class="card-button">Купить</button>
+                <a href="#" class="favorites">
+                  <img src="img/heart.svg" alt="heart" class="heart">
+                </a>
+              </div>
+            </div>
+            <!-- /.card-overlay -->
+          </div>
+          <!-- /.books__card -->
+          <div class="books__card">
+            <img class="books__img" src="img/Recommended/r-3.png" alt="icon: book">
+            <div class="card-overlay">
+              <h5 class="card-name">The Blue Flowers Ray...</h5>
+              <p class="card-text">Novel</p>
+              <p class="card-price">$19.50</p>
+              <div class="card-buy">
+                <button data-toggle="modal" class="card-button">Купить</button>
+                <a href="#" class="favorites">
+                  <img src="img/heart.svg" alt="heart" class="heart">
+                </a>
+              </div>
+            </div>
+            <!-- /.card-overlay -->
+          </div>
+          <!-- /.books__card -->
+          <div class="books__card">
+            <img class="books__img" src="img/Recommended/r-4.png" alt="icon: book">
+            <div class="card-overlay">
+              <h5 class="card-name">There There :
+              a&nbspNovel by TO</h5>
+              <p class="card-text">Novel</p>
+              <p class="card-price">$20.00</p>
+              <div class="card-buy">
+                <button data-toggle="modal" class="card-button">Купить</button>
+                <a href="#" class="favorites">
+                  <img src="img/heart.svg" alt="heart" class="heart">
+                </a>
+              </div>
+            </div>
+            <!-- /.card-overlay -->
+          </div>
+          <!-- /.books__card -->
+          <div class="books__card books__card-five">
+            <img class="books__img" src="img/Recommended/r-5.png" alt="icon: book">
+            <div class="card-overlay">
+              <h5 class="card-name">WMNDFL : The&nbspInspiration</h5>
+              <p class="card-text">Business</p>
+              <p class="card-price">$23.00</p>
+              <div class="card-buy">
+                <button data-toggle="modal" class="card-button">Купить</button>
+                <a href="#" class="favorites">
+                  <img src="img/heart.svg" alt="heart" class="heart">
+                </a>
+              </div>
+            </div>
+            <!-- /.card-overlay -->
+          </div>
+          <!-- /.books__card -->
+          <div class="books__card books__card-six">
+            <img class="books__img" src="img/Recommended/r-6.png" alt="icon: book">
+            <div class="card-overlay">
+              <h5 class="card-name">Making Things&nbspHappen</h5>
+              <p class="card-text">Motivation</p>
+              <p class="card-price">$23.00</p>
+              <div class="card-buy">
+                <button data-toggle="modal" class="card-button">Купить</button>
+                <a href="#" class="favorites">
+                  <img src="img/heart.svg" alt="heart" class="heart">
+                </a>
+              </div>
+            </div>
+            <!-- /.card-overlay -->
+          </div>
+          <!-- /.books__card -->
+          <button class="button-more">Больше рекомендаций</button>
+        </div>
+        <!-- /.books__recommended -->
+        
+
+        <div class="books__top">
+          <div class="books__top-wrapper">
+            <div class="books__card books__card-wrapper">
+              <img class="card-photo" src="img/Top/t-1.png" alt="icon: book">
+              <div class="card-overlay">
+                <h5 class="card-title">Sprint : Solve, Test&nbspin 5 Days</h5>
+                <p class="card-cost">$23.00</p>
+                <button data-toggle="modal" class="card-button">Купить</button>
+              </div>
+            </div>
+            <!-- /.books__card -->
+            <div class="books__card books__card-wrapper">
+              <img class="card-photo" src="img/Top/t-2.png" alt="icon: book">
+              <div class="card-overlay">
+                <h5 class="card-title">Hacking Growth
+                Break Problem</h5>
+                <p class="card-cost">$23.00</p>
+                <button data-toggle="modal" class="card-button">Купить</button>
+              </div>
+            </div>
+            <!-- /.books__card -->
+            <div class="books__card books__card-wrapper">
+              <img class="card-photo" src="img/Top/t-3.png" alt="icon: book">
+              <div class="card-overlay">
+                <h5 class="card-title">Very Nice a Novel&nbspby Mercy</h5>
+                <p class="card-cost">$23.00</p>
+                <button data-toggle="modal" class="card-button">Купить</button>
+              </div>
+            </div>
+            <!-- /.books__card -->
+            <div class="books__card books__card-wrapper">
+              <img class="card-photo" src="img/Top/t-4.png" alt="icon: book">
+              <div class="card-overlay">
+                <h5 class="card-title">Hooked : How to Build Products</h5>
+                <p class="card-cost">$23.00</p>
+                <button data-toggle="modal" class="card-button">Купить</button>
+              </div>
+            </div>
+            <!-- /.books__card -->
+          </div>
+          <div class="line"></div>
+          <p class="best">Лучшие книги</p>  
+        </div>
+        <!-- /.books__top -->
+      </div>
+      <!-- /.books-best -->
+    </div>
+    <!-- /.books__container -->
+  </div>
+  <!-- /.books -->
+
+
+
+
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="icon: close">
+      </a>
+      <h3 class="modal__title modal__title--mb-3">Send us a message</h3>
+      <form action="send.php" method="POST" class="form modal__form">
+        <input 
+          type="text" 
+          class="input modal__input" 
+          placeholder="Your Full Name*" 
+          name="name" 
+          required minlength="2"
+          maxlength="20" 
+        />
+        <input 
+          type="tel" 
+          class="input modal__input phone-number" 
+          placeholder="Phone Number*" 
+          id="phone" 
+          name="phone"
+          required minlength="16"
+        />
+        <input 
+          type="email" 
+          class="input modal__input" 
+          placeholder="Email*" 
+          name="emailfixed" 
+          required
+        />
+        <textarea 
+          class="message modal__message" 
+          placeholder="Message" 
+          name="message">
+        </textarea>
+        <button class="button modal__button" type="submit">Send</button>
+        <span class="modal__info">* Required Fields</span>
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+
+  
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
