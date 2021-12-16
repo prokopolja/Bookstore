@@ -1,24 +1,24 @@
 $(document).ready(function () {
-  var hotelSlider = new Swiper('.hotel-slider', {
+  var categorySlider = new Swiper('.category-slider', {
     // Optional parameters
     loop: true,
 
     // Navigation arrows
     navigation: {
-      nextEl: '.hotel-slider__button--next',
-      prevEl: '.hotel-slider__button--prev',
+      nextEl: '.category-slider__button--next',
+      prevEl: '.category-slider__button--prev',
     },
     // Управление клавиатурой
       keyboard: true,
   });
-  var reviewsSlider = new Swiper('.reviews-slider', {
+  var unreleasedSlider = new Swiper('.unreleased-slider', {
     // Optional parameters
     loop: true,
 
     // Navigation arrows
     navigation: {
-      nextEl: '.reviews-slider__button--next',
-      prevEl: '.reviews-slider__button--prev',
+      nextEl: '.unreleased-slider__button--next',
+      prevEl: '.unreleased-slider__button--prev',
     },
     // Управление клавиатурой
     keyboard: true,

@@ -24,12 +24,13 @@
       font-size: 16px
       line-height: 22px 
       color: $dark
-  &__button
-    min-width:  
+  &__button 
     padding: 3px 32px 4px 30px
   &__button:hover
     color: $secondary
     background-color: $button
+    transition: 0.1s
+   
       
   &-bottom 
     display: flex
@@ -41,8 +42,10 @@
       margin-right: 66px
       margin-left: 3px
     &__book
-      background-color: $background
+      background: rgba(179, 186, 197, 0.1)
       padding: 99px 92px 56px 95px
+    &__img
+      opacity: 1 
 .bookname
   font-family: 'Roboto Condensed', sans-serif
   font-style: normal
@@ -97,9 +100,12 @@
     text-transform: uppercase
     font-size: 18px
     line-height: 25px
+    transition: 0.1s
   &-primary:hover
     color: $secondary
     background-color: $button
+    transition: 0.1s
+   
     
   
 

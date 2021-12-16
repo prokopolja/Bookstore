@@ -9,9 +9,9 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -57,7 +57,7 @@
         </div>
         <!-- //header-bottom__text -->
         <div class="header-bottom__book">
-          <img class="book-img" src="img/Book-image.png" alt="Book">
+          <img class="header-bottom__img" src="img/Book-image.png" alt="Book">
         </div>
         <!-- /.header-bottom__book -->
       </div>
@@ -66,7 +66,7 @@
   </header>
   <!-- /.header -->
 
-  <div class="books">
+  <section class="books">
     <div class="books__container">
       <div class="title">
         <h2 class="title-left">Рекомендации</h2>
@@ -82,9 +82,9 @@
               <p class="card-price">$25.00</p>
               <div class="card-buy">
                 <button data-toggle="modal" class="card-button">Купить</button>
-                <a href="#" class="favorites">
-                  <img src="img/heart.svg" alt="heart" class="heart">
-                </a>
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#heart"></use>
+                </svg>
               </div>
               
             </div>
@@ -99,9 +99,9 @@
               <p class="card-price">$28.00</p>
               <div class="card-buy">
                 <button data-toggle="modal" class="card-button">Купить</button>
-                <a href="#" class="favorites">
-                  <img src="img/heart.svg" alt="heart" class="heart">
-                </a>
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#heart"></use>
+                </svg>
               </div>
             </div>
             <!-- /.card-overlay -->
@@ -115,9 +115,9 @@
               <p class="card-price">$19.50</p>
               <div class="card-buy">
                 <button data-toggle="modal" class="card-button">Купить</button>
-                <a href="#" class="favorites">
-                  <img src="img/heart.svg" alt="heart" class="heart">
-                </a>
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#heart"></use>
+                </svg>
               </div>
             </div>
             <!-- /.card-overlay -->
@@ -132,15 +132,15 @@
               <p class="card-price">$20.00</p>
               <div class="card-buy">
                 <button data-toggle="modal" class="card-button">Купить</button>
-                <a href="#" class="favorites">
-                  <img src="img/heart.svg" alt="heart" class="heart">
-                </a>
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#heart"></use>
+                </svg>
               </div>
             </div>
             <!-- /.card-overlay -->
           </div>
           <!-- /.books__card -->
-          <div class="books__card books__card-five">
+          <div class="books__card books__card">
             <img class="books__img" src="img/Recommended/r-5.png" alt="icon: book">
             <div class="card-overlay">
               <h5 class="card-name">WMNDFL : The&nbspInspiration</h5>
@@ -148,15 +148,15 @@
               <p class="card-price">$23.00</p>
               <div class="card-buy">
                 <button data-toggle="modal" class="card-button">Купить</button>
-                <a href="#" class="favorites">
-                  <img src="img/heart.svg" alt="heart" class="heart">
-                </a>
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#heart"></use>
+                </svg>
               </div>
             </div>
             <!-- /.card-overlay -->
           </div>
           <!-- /.books__card -->
-          <div class="books__card books__card-six">
+          <div class="books__card books__card">
             <img class="books__img" src="img/Recommended/r-6.png" alt="icon: book">
             <div class="card-overlay">
               <h5 class="card-name">Making Things&nbspHappen</h5>
@@ -164,18 +164,17 @@
               <p class="card-price">$23.00</p>
               <div class="card-buy">
                 <button data-toggle="modal" class="card-button">Купить</button>
-                <a href="#" class="favorites">
-                  <img src="img/heart.svg" alt="heart" class="heart">
-                </a>
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#heart"></use>
+                </svg>
               </div>
             </div>
             <!-- /.card-overlay -->
           </div>
           <!-- /.books__card -->
-          <button class="button-more">Больше рекомендаций</button>
+          <button data-toggle="modal" class="button-more">Больше рекомендаций</button>
         </div>
         <!-- /.books__recommended -->
-        
 
         <div class="books__top">
           <div class="books__top-wrapper">
@@ -218,15 +217,134 @@
             <!-- /.books__card -->
           </div>
           <div class="line"></div>
-          <p class="best">Лучшие книги</p>  
+          <div class="books__button">
+            <a href="#" class="button-best">Лучшие книги</a>
+          </div>  
         </div>
         <!-- /.books__top -->
       </div>
       <!-- /.books-best -->
     </div>
     <!-- /.books__container -->
-  </div>
+  </section>
   <!-- /.books -->
+
+  <div class="line category-line"></div>
+
+
+  <section class="category">
+    <div class="container category__container">
+      
+      <div class="swiper category-slider category__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide category-slider__block">
+            <div class="swiper-slide category-slider__item">
+              <img src="img/Presentation-Chart-Up.svg" alt="icon: presentation" class="category-icon">
+              <p class="category-text">Бизнес & Финансы</p>
+              <p class="category-about">Книги про мир бизнеса</p>
+            </div>
+          
+            <div class="swiper-slide category-slider__item">
+              <img src="img/Diamond.svg" alt="logo: diamond" class="category-icon">
+              <p class="category-text">Самомотивация</p>
+              <p class="category-about">Книги о мотивации</p>
+            </div>
+          
+            <div class="swiper-slide category-slider__item">
+              <img src="img/Book-3.svg" alt="logo: book" class="category-icon">
+              <p class="category-text">Романы Теленовеллы</p>
+              <p class="category-about">Книги с крутыми историями</p>
+            </div>
+          
+            <div class="swiper-slide category-slider__item">
+              <img src="img/Group.svg" alt="logo: group" class="category-icon">
+              <p class="category-text">Навыки будущего</p>
+              <p class="category-about">Книги для самоподготовки</p>
+            </div>
+          </div>
+          <!-- /.swiper-slide -->
+        </div>
+        <!-- /.swiper-wrapper -->
+        <button class="category-slider__button category-slider__button--prev"></button>
+        <button class="category-slider__button category-slider__button--next"></button>
+      </div>
+      <!-- /.swiper category-slider -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+
+  <section class="unreleased">
+    <div class="container unreleased-container">
+      <h3 class="unreleased-title">Неизданные книги</h3>
+
+      <div class="swiper unreleased-slider ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="unreleased-slider__block">
+            
+              <div class="swiper-slide unreleased-slider__item">
+                <img src="img/unrealeased/un-1.png" alt="book" class="unreleased-slider__image">
+              </div>
+            
+              <div class="swiper-slide unreleased-slider__item">
+                <img src="img/unrealeased/un-2.png" alt="logo: book" class="unreleased-slider__image">
+              </div>
+            
+              <div class="swiper-slide unreleased-slider__item">
+                <img src="img/unrealeased/un-3.png" alt="logo: book" class="unreleased-slider__image">
+              </div>
+            
+              <div class="swiper-slide unreleased-slider__item">
+                <img src="img/unrealeased/un-4.png" alt="logo: book" class="unreleased-slider__image">
+              </div>
+            
+              <div class="swiper-slide unreleased-slider__item">
+                <img src="img/unrealeased/un-5.png" alt="logo: book" class="unreleased-slider__image">
+              </div>
+            </div>
+          </div>
+          <!-- /.swiper-slide -->
+        </div>
+        <!-- /.swiper-wrapper -->
+        <button class="unreleased-slider__button unreleased-slider__button--prev"></button>
+        <button class="unreleased-slider__button unreleased-slider__button--next"></button>
+      </div>  
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.unreleased -->
+
+  <section class="story">
+    <div class="container-story">
+      <div class="story-info">
+        <h2 class="story-info__title">История Автора</h2>
+        <p class="story-info__text">
+          Это раздел авторского рассказа. Каждую неделю мы стараемся рассказать вам историю писателя. Расскажем всем
+          о закулисье их книг.
+        </p>
+      </div>
+      <!-- /.story-info -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/LA3T8zMkeh8?controls=0" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+      <div class="story-info__videos">
+        <iframe width="315" height="200" src="https://www.youtube.com/embed/lslXgsR2yx8?controls=0" title="YouTube video player"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+        <iframe width="315" height="200" src="https://www.youtube.com/embed/LkwdMrNZhJE" title="YouTube video player"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+      <!-- /.story-videos -->
+    </div>
+    <!-- /.container-story -->
+  </section>
+  <!-- /.story -->
 
 
 

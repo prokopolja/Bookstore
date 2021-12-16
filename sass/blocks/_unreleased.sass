@@ -1,0 +1,52 @@
+.unreleased
+  margin-bottom: 80px
+  background-color: $dark
+  position: relative
+  &-title
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 48px
+    letter-spacing: 0.2px
+    color: $secondary
+    padding-top: 63px
+    margin-top: 0
+    margin-bottom: 56px
+    margin-left: 4px
+  &-slider
+    position: relative
+    &__block
+      display: flex
+      object-fit: cover
+      margin-bottom: 48px
+      width: 230px
+      height: 330px
+    &__item
+      overflow: hidden
+      display: block
+      object-fit: cover
+      transform: translate
+    &__image
+      border-radius: 8px 
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 99
+      width: 30px
+      height: 30px
+      border: none
+      cursor: pointer
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 10px
+      background-color: yellow
+      
+      &--next
+        right: 10px
+        background-image: url(../img/Button-r.png)
+      &--prev
+        left: 18px
+        background-image: url(../img/Button-l.png) 
+            

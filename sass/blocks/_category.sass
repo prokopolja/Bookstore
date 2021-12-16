@@ -1,0 +1,66 @@
+.category
+  &__container
+    max-width: 1140px
+    position: relative
+  &-line
+    margin-bottom: 61px   
+  &-slider
+    position: relative
+    margin-bottom: 100px
+    &__item
+      border: 1px solid $line
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 265px
+      height: 240px
+      
+    &__block
+      display: flex  
+      justify-content: space-between
+      margin-bottom: 100p
+    &__button
+      width: 56px
+      height: 56px
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 99
+      
+      border: none
+      cursor: pointer
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 10px
+      background-color: pink
+      &--next
+        right: 10px
+        background-image: url(../img/Button-r.png)
+        z-index: 100
+      &--prev
+        left: 
+        background-image: url(../img/Button-l.png)  
+        z-index: 100 
+  &-icon
+    width: 64px
+    height: 64px
+    margin-top: 40px
+  &-text
+    color: $dark
+    font-family: Roboto, sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 22px
+    line-height: 32px 
+    margin-top: 41px
+    margin-left: 3px
+    margin-bottom: 11px
+    letter-spacing: 0.2px
+  &-about
+    color: $about
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    margin-top: 0
+    margin-bottom: 30px
