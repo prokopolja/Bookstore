@@ -10,6 +10,8 @@ $(document).ready(function () {
     },
     // Управление клавиатурой
       keyboard: true,
+
+
   });
   var unreleasedSlider = new Swiper('.unreleased-slider', {
     // Optional parameters
