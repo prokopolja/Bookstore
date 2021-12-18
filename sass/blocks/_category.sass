@@ -1,66 +1,81 @@
 .category
-  &__container
-    max-width: 1140px
-    position: relative
+    
   &-line
     margin-bottom: 61px   
   &-slider
-    position: relative
-    margin-bottom: 100px
+    position: relative 
+    overflow: hidden
+    &__wrapper
+      position: relative
+      margin-bottom: 101px 
     &__item
       border: 1px solid $line
       display: flex
       flex-direction: column
+      justify-content: space-between
       align-items: center
-      width: 265px
+      width: 264px
       height: 240px
+      border-radius: 8px
+      box-sizing: border-box
+      margin: 0
       
     &__block
-      display: flex  
-      justify-content: space-between
-      margin-bottom: 100p
+      margin: 0
+      padding: 0
+    &__icon
+      width: 64px
+      height: 64px
+      margin-top: 40px
+    &__title
+      color: $dark
+      font-family: Roboto, sans-serif
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px 
+      margin-top: 41px
+      margin-left: 4px
+      margin-bottom: 11px
+      letter-spacing: 0.2px
+    &__text
+      color: $about
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+      margin-top: 0
+      margin-bottom: 30px
     &__button
+      position: absolute
       width: 56px
       height: 56px
-      position: absolute
-      top: 50%
-      transform: translateY(-50%)
-      z-index: 2
       
+      top: 37%  
       border: none
       cursor: pointer
       background-repeat: no-repeat
       background-position: center
-      background-size: 10px
-      background-color: pink
+      background-color: $secondary
+      border-radius: 50%
+      box-shadow: 0px 12px 16px 
       &--next
-        right: 10px
-        background-image: url(../img/Button-r.png)
-        z-index: 3
+        display: flex
+        align-items: center
+        justify-content: center
+        right: 0
+        transform: translate(50%, 10%)
+        z-index: 103
       &--prev
-        left: 
-        background-image: url(../img/Button-l.png)  
-        z-index: 3
-  &-icon
-    width: 64px
-    height: 64px
-    margin-top: 40px
-  &-text
-    color: $dark
-    font-family: Roboto, sans-serif
-    font-style: normal
-    font-weight: 500
-    font-size: 22px
-    line-height: 32px 
-    margin-top: 41px
-    margin-left: 3px
-    margin-bottom: 11px
-    letter-spacing: 0.2px
-  &-about
-    color: $about
-    font-style: normal
-    font-weight: normal
-    font-size: 16px
-    line-height: 22px
-    margin-top: 0
-    margin-bottom: 30px
+        display: flex
+        align-items: center
+        justify-content: center
+        left: 0
+        transform: translate(-50%, 10%)
+        z-index: 103
+      &-img 
+        width: 16px
+        height: 18px  
+
+
+  

@@ -82,7 +82,7 @@
               <p class="card-price">$25.00</p>
               <div class="card-buy">
                 <button data-toggle="modal" class="card-button">Купить</button>
-                <svg class="icon">
+                <svg class="icon-heart">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
               </div>
@@ -99,7 +99,7 @@
               <p class="card-price">$28.00</p>
               <div class="card-buy">
                 <button data-toggle="modal" class="card-button">Купить</button>
-                <svg class="icon">
+                <svg class="icon-heart">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
               </div>
@@ -115,7 +115,7 @@
               <p class="card-price">$19.50</p>
               <div class="card-buy">
                 <button data-toggle="modal" class="card-button">Купить</button>
-                <svg class="icon">
+                <svg class="icon-heart">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
               </div>
@@ -132,7 +132,7 @@
               <p class="card-price">$20.00</p>
               <div class="card-buy">
                 <button data-toggle="modal" class="card-button">Купить</button>
-                <svg class="icon">
+                <svg class="icon-heart">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
               </div>
@@ -148,7 +148,7 @@
               <p class="card-price">$23.00</p>
               <div class="card-buy">
                 <button data-toggle="modal" class="card-button">Купить</button>
-                <svg class="icon">
+                <svg class="icon-heart">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
               </div>
@@ -164,7 +164,7 @@
               <p class="card-price">$23.00</p>
               <div class="card-buy">
                 <button data-toggle="modal" class="card-button">Купить</button>
-                <svg class="icon">
+                <svg class="icon-heart">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
               </div>
@@ -234,41 +234,60 @@
 
   <section class="category">
     <div class="container category__container">
-      
-      <div class="swiper category-slider category__slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide category-slider__block">
-            <div class="swiper-slide category-slider__item">
-              <img src="img/Presentation-Chart-Up.svg" alt="icon: presentation" class="category-icon">
-              <p class="category-text">Бизнес & Финансы</p>
-              <p class="category-about">Книги про мир бизнеса</p>
+      <div class="category-slider category__slider">
+
+        <div class="swiper-wrapper category-slider__wrapper">
+          <div class=" swiper-slide category-slider">
+            <div class="slide-item">
+              <div class="slide category-slider__item">
+                <img src="img/Presentation-Chart-Up.svg" alt="icon: presentation" class="category-slider__icon">
+                <h3 class="category-slider__title">Бизнес & Финансы</h3>
+                <p class="category-slider__text">Книги про мир бизнеса</p>
+              </div>
             </div>
-          
-            <div class="swiper-slide category-slider__item">
-              <img src="img/Diamond.svg" alt="logo: diamond" class="category-icon">
-              <p class="category-text">Самомотивация</p>
-              <p class="category-about">Книги о мотивации</p>
-            </div>
-          
-            <div class="swiper-slide category-slider__item">
-              <img src="img/Book-3.svg" alt="logo: book" class="category-icon">
-              <p class="category-text">Романы Теленовеллы</p>
-              <p class="category-about">Книги с крутыми историями</p>
-            </div>
-          
-            <div class="swiper-slide category-slider__item">
-              <img src="img/Group.svg" alt="logo: group" class="category-icon">
-              <p class="category-text">Навыки будущего</p>
-              <p class="category-about">Книги для самоподготовки</p>
+          </div>  
+
+          <div class="swiper-slide category-slider">
+            <div class="slide-item">
+              <div class="slide category-slider__item">
+                <img src="img/Diamond.svg" alt="logo: diamond" class="category-slider__icon">
+                <h3 class="category-slider__title">Самомотивация</h3>
+                <p class="category-slider__text">Книги о мотивации</p>
+              </div>
             </div>
           </div>
+          <div class="swiper-slide category-slider">
+            <div class="slide-item">
+              <div class="slide category-slider__item">
+                <img src="img/Book-3.svg" alt="logo: book" class="category-slider__icon">
+                <h3 class="category-slider__title">Романы Теленовеллы</h3>
+                <p class="category-slider__text">Книги с крутыми историями</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide category-slider">
+            <div class="slide-item">
+              <div class="slide category-slider__item">
+                <img src="img/Group.svg" alt="logo: group" class="category-slider__icon">
+                <h3 class="category-slider__title">Навыки будущего</h3>
+                <p class="category-slider__text">Книги для самоподготовки</p>
+              </div>
+              </div>
+            </div>
           <!-- /.swiper-slide -->
         </div>
         <!-- /.swiper-wrapper -->
-        <button class="category-slider__button category-slider__button--prev"></button>
-        <button class="category-slider__button category-slider__button--next"></button>
+
+        <button class="category-slider__button category-slider__button--prev">
+          <img class="category-slider__button-img" src="img/button-prev.svg" alt="button-prev">
+        </button>
+        
+        <button class="category-slider__button category-slider__button--next">
+          <img class="category-slider__button-img" src="img/button-next.svg" alt="button-next">
+        </button>
       </div>
-      <!-- /.swiper category-slider -->
+      <!-- /.category-slider -->
     </div>
     <!-- /.container -->
   </section>
@@ -276,39 +295,52 @@
 
   <section class="unreleased">
     <div class="container unreleased-container">
-      <h3 class="unreleased-title">Неизданные книги</h3>
+
+      <div class="unreleased__top">
+        <h3 class="unreleased-title">Неизданные книги</h3>
+        <div class="unreleased__left">
+          <button class="unreleased-slider__button unreleased-slider__button--prev"></button>
+          <button class="unreleased-slider__button unreleased-slider__button--next"></button>
+        </div>
+        <!-- /.unreleased__left -->
+      </div>
+      <!-- /.unreleased__top -->
+      
 
       <div class="swiper unreleased-slider ">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="unreleased-slider__block">
-            
-              <div class="swiper-slide unreleased-slider__item">
-                <img src="img/unrealeased/un-1.png" alt="book" class="unreleased-slider__image">
-              </div>
-            
-              <div class="swiper-slide unreleased-slider__item">
-                <img src="img/unrealeased/un-2.png" alt="logo: book" class="unreleased-slider__image">
-              </div>
-            
-              <div class="swiper-slide unreleased-slider__item">
-                <img src="img/unrealeased/un-3.png" alt="logo: book" class="unreleased-slider__image">
-              </div>
-            
-              <div class="swiper-slide unreleased-slider__item">
-                <img src="img/unrealeased/un-4.png" alt="logo: book" class="unreleased-slider__image">
-              </div>
-            
-              <div class="swiper-slide unreleased-slider__item">
-                <img src="img/unrealeased/un-5.png" alt="logo: book" class="unreleased-slider__image">
-              </div>
+        <div class="swiper-wrapper unreleased-slider__wrapper">
+
+          <div class="swiper-slide unreleased-slider">
+            <div class="swiper-slide unreleased-slider__item">
+              <img src="img/unrealeased/un-1.jpg" alt="book" class="unreleased-slider__image">
+            </div>
+          </div>
+          <!-- /.swiper-slide --> 
+          <div class="swiper-slide unreleased-slider">
+          
+            <div class="swiper-slide unreleased-slider__item">
+              <img src="img/unrealeased/un-2.jpg" alt="logo: book" class="unreleased-slider__image">
             </div>
           </div>
           <!-- /.swiper-slide -->
+          <div class="swiper-slide unreleased-slider">
+            <div class="swiper-slide unreleased-slider__item">
+              <img src="img/unrealeased/un-3.jpg" alt="logo: book" class="unreleased-slider__image">
+            </div>
+          </div>
+          <div class="swiper-slide unreleased-slider">
+            <div class="swiper-slide unreleased-slider__item">
+              <img src="img/unrealeased/un-4.jpg" alt="logo: book" class="unreleased-slider__image">
+            </div>
+          </div>
+          <div class="swiper-slide unreleased-slider">
+            <div class="swiper-slide unreleased-slider__item">
+              <img src="img/unrealeased/un-5.jpg" alt="logo: book" class="unreleased-slider__image">
+            </div>
+          </div>
         </div>
         <!-- /.swiper-wrapper -->
-        <button class="unreleased-slider__button unreleased-slider__button--prev"></button>
-        <button class="unreleased-slider__button unreleased-slider__button--next"></button>
+        
       </div>  
     </div>
     <!-- /.container -->
@@ -316,35 +348,116 @@
   <!-- /.unreleased -->
 
   <section class="story">
-    <div class="container story-container">
+    <div class="container story__container">
       <div class="story-info">
         <h2 class="story-info__title">История Автора</h2>
         <p class="story-info__text">
-          Это раздел авторского рассказа. Каждую неделю мы стараемся рассказать вам историю писателя. Расскажем всем
-          о закулисье их книг.
+          Это раздел авторского рассказа. Каждую неделю мы стараемся рассказать вам историю писателя. Расскажем всем о&nbsp;закулисье их книг.
         </p>
       </div>
       <!-- /.story-info -->
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/LA3T8zMkeh8?controls=0" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-      <div class="story-info__videos">
-        <iframe width="315" height="200" src="https://www.youtube.com/embed/lslXgsR2yx8?controls=0" title="YouTube video player"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-        <iframe width="315" height="200" src="https://www.youtube.com/embed/LkwdMrNZhJE" title="YouTube video player"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-        <iframe width="315" height="200" src="https://www.youtube.com/embed/1G2aC6E3QOk" title="YouTube video player"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
 
+
+      <!-- ПЕРВОЕ ВИДЕО СВЕРХУ -->
+      <div class="story-top">
+        <div class="story story-top__wrapper">
+          <a class="" data-fancybox href="https://youtu.be/OzvasAJIHb4">
+            <img src="img/video-1.jpg" alt="" class="story__back-first">
+            <img src="img/play-first.svg" alt="icon: play" class="story__play-big story__img-cap">
+          </a>
+        </div><!-- /.story-top__wrapper -->
+      </div><!-- /.story-top -->
+      
+      <div class="story__play">
+        
+        
+        <!-- ВИДЕО СНИЗУ СЛЕВА-->
+        <div class="story-row">
+          <div class="story-row__wrapper story-row__wrapper--bg2">
+            <a class="story-row__wrapper story-row__wrapper--bg2" data-fancybox
+              href="https://youtu.be/o1IZ7yqxaHw">
+              <img src="img/video-2.jpg" alt="icon" class="story__back-second">
+              <img src="img/play-second.svg" alt="icon: picture" class="story__img-cap story__play-small">
+            </a>
+          </div><!-- /.story-row__wrapper -->
+      
+          <div class="story-row__info">
+            <div class="story-row__text">
+              <h3 class="story-row__title">
+                <a class="story-row__title" href="#">Emelda Scandroot</a>
+              </h3>
+              <div class="story-row__description">
+                <a href="#" class="story-row__description">Author of Books Tittle</a>
+              </div>
+            </div><!-- /.story-row__text -->
+      
+            <svg class="icon-flag">
+              <use xlink:href="img/sprite.svg#flag"></use>
+            </svg>
+      
+          </div><!-- /.story-row__info -->
+      
+        </div><!-- /.story-row  ВИДЕО СЛЕВА-->
+      
+        
+        <div class="story-row">
+          <div class="story-row__wrapper  story-row__wrapper--bg3">
+            <a class="story-row__wrapper story-row__wrapper--bg2" data-fancybox
+              href="https://youtu.be/AlZuqUTgcss">
+              <img src="img/video-3.jpg" alt="" class="story_back-second">
+              <img src="img/play-second.svg" alt="icon: image" class="story__img-cap story__play-small">
+            </a>
+          </div><!-- /.story-row__wrapper -->
+      
+          <div class="story-row__info">
+            <div class="story-row__text">
+              <h3 class="story-row__title">
+                <a href="#" class="story-row__title">Mar Rueda</a>
+              </h3>
+              <div class="story-row__description">
+                <a href="#" class="story-row__description">Author of Books Tittle</a>
+              </div>
+            </div><!-- /.story-row__text -->
+      
+            <svg class="icon-flag">
+              <use xlink:href="img/sprite.svg#flag"></use>
+            </svg>
+      
+          </div><!-- /.story-row__info  ВИДЕО ПОСЕРЕДИНЕ-->
+        </div><!-- /.story-row -->
+      
+
+        <div class="story-row video-row--last">
+      
+          <div class="story-row__wrapper story-row__wrapper--bg4">
+            <a class="story-row__wrapper story-row__wrapper--bg2" data-fancybox
+              href="https://youtu.be/N1pI7r3so0k">
+              <img src="img/video-4.jpg" alt="" class="story__back-second">
+              <img src="img/play-second.svg" alt="картинка видео-заглушка" class="story__img-cap story__play-small">
+            </a>
+          </div><!-- /.story-row__wrapper  ВИДЕО СПРАВА-->
+      
+          <div class="story-row__info">
+            <div class="story-row__text">
+              <h3 class="story-row__title">
+                <a href="#" class="story-row__title">Nembo Lukeni</a>
+              </h3>
+              <div class="story-row__description">
+                <a href="#" class="story-row__description">Author of Books Tittle</a>
+              </div>
+            </div><!-- /.video-row__text -->
+            <svg class="icon-flag">
+              <use xlink:href="img/sprite.svg#flag"></use>
+            </svg>
+      
+          </div>
+          <!-- /.story-row__info -->
+        </div>
+        <!-- /.story-row -->
+      
       </div>
-      <!-- /.story-videos -->
+      <!-- /.story__play -->
+
     </div>
     <!-- /.container-story -->
   </section>
@@ -357,50 +470,50 @@
           <h3 class="partner__title">Некоторые из издателей, с которыми мы сотрудничали</h3>
         </div>
 
-        <div class="partner partner-wrapper">
-          <img src="img/partners/slack.svg" alt="slack" class="partner__image">
+        <div class="partner-wrapper">
+          <img src="img/partners/slack.svg" alt="slack" class="partner__image image-1">
         </div>
 
-        <div class="partner partner-wrapper">
-          <img src="img/partners/netflix.svg" alt="netflix" class="partner__image">
+        <div class="partner-wrapper">
+          <img src="img/partners/netflix.svg" alt="netflix" class="partner__image image-2">
         </div>
 
-        <div class="partner partner-wrapper">
+        <div class="partner-wrapper">
           <img src="img/partners/fitbit.svg" alt="fitbit" class="partner__image">
         </div>
 
-        <div class="partner partner-wrapper">
+        <div class="partner-wrapper">
           <img src="img/partners/google.svg" alt="google" class="partner__image">
         </div>
 
-        <div class="partner partner-wrapper">
+        <div class="partner-wrapper">
           <img src="img/partners/airbnb.svg" alt="airbnb" class="partner__image">
         </div>
 
-        <div class="partner partner-wrapper">
-          <img src="img/partners/uber.svg" alt="uber" class="partner__image">
+        <div class="partner-wrapper">
+          <img src="img/partners/uber.svg" alt="uber" class="partner__image image-6">
         </div>
 
-        <div class="partner partner-wrapper">
-          <img src="img/partners/netflix.svg" alt="netflix" class="partner__image">
+        <div class="partner-wrapper">
+          <img src="img/partners/netflix.svg" alt="netflix" class="partner__image-bottom image-7">
         </div>
 
-        <div class="partner partner-wrapper">
-          <img src="img/partners/airbnb.svg" alt="airbnb" class="partner__image">
+        <div class="partner-wrapper">
+          <img src="img/partners/airbnb.svg" alt="airbnb" class="partner__image-bottom">
         </div>
 
-        <div class="partner partner-wrapper">
-          <img src="img/partners/slack.svg" alt="slack" class="partner__image">
+        <div class="partner-wrapper">
+          <img src="img/partners/slack.svg" alt="slack" class="partner__image-bottom">
         </div>
 
-        <div class="partner partner-wrapper">
-          <img src="img/partners/uber.svg" alt="uber" class="partner__image">
+        <div class="partner-wrapper">
+          <img src="img/partners/uber.svg" alt="uber" class="partner__image-bottom image-10">
         </div>
-        <div class="partner partner-wrapper">
-          <img src="img/partners/fitbit.svg" alt="fitbit" class="partner__image">
+        <div class="partner-wrapper">
+          <img src="img/partners/fitbit.svg" alt="fitbit" class="partner__image-bottom">
         </div>
-        <div class="partner partner-wrapper">
-          <img src="img/partners/google.svg" alt="google" class="partner__image">
+        <div class="partner-wrapper">
+          <img src="img/partners/google.svg" alt="google" class="partner__image-bottom">
         </div>
 
 
@@ -415,7 +528,7 @@
   <section class="blog">
     <div class="container blog__container">
       <div class="blog__wrapper">
-        <h2 class="blog__title" id="blog">Ehya Блог</h2>
+        <h2 class="blog__title">Ehya Блог</h2>
         <div class="blog__link-wrapper">
           <a href="#" class="blog__link">Все Блоги</a>
         </div>
@@ -524,13 +637,17 @@
   
 
           <form action="send.php" method="POST" class="subscribe offer__form">
-
-            <input type="email" class="offer__input" placeholder="Your email address" name="email" required>
+            <input 
+              type="email" 
+              class="offer__input" 
+              placeholder="Ваш Email" 
+              name="email" 
+              required 
+            />
             <button class="offer__button">Регистрация</button>
-            <img src="img/mail.svg" alt="" class="offer__icon">
+            <img src="img/mail.svg" alt="icon: mail" class="offer__icon">
           </form>
           <!-- /.offer__form -->
-
   
         </div>
       </div>
@@ -540,103 +657,108 @@
   </section>
   <!-- /.offer -->
 
-    <footer class="footer">
-      <div class="container footer__container">
-    
-        <div class="footer__grid">
-    
-          <div class="footer__create create">
-            <a class="create__logo" href="https://lidiya-style.ru/design-theory">
-              <img src="img/logo-bottom.svg" alt="" class="footer__logo">
+  <footer class="footer">
+    <div class="container footer__container">
+  
+      <div class="footer__grid">
+  
+        <div class="footer__create create">
+          <a class="create__logo" href="https://olgaprokopovich.ru/Bookstore">
+            <img src="img/logo-bottom.svg" alt="" class="footer__logo">
+          </a>
+          <!-- /.create__logo -->
+  
+          <p class="create__text">Создайте современный и креативный веб-сайт с crealand</p>
+  
+          <div class="create__social-network social-network">
+            <a href="https://www.google.com" class="social-network__link">
+              <img src="img/icon-google.svg" alt="icon: google" class="social-network__icon">
             </a>
-            <!-- /.create__logo -->
-    
-            <p class="create__text">Создайте современный и креативный веб-сайт с crealand</p>
-    
-            <div class="create__social-network social-network">
-              <a target="_blank" rel="nofollow noopener" href="https://www.google.com" class="social-network__link">
-                <img src="img/icon-google.svg" alt="icon: google" class="social-network__icon">
-              </a>
-              <a target="_blank" rel="nofollow noopener" href="https://twitter.com" class="social-network__link">
-                <img src="img/icon-twitter.svg" alt="icon: twitter" class="social-network__icon">
-              </a>
-              <a target="_blank" rel="nofollow noopener" href="https://www.instagram.com" class="social-network__link">
-                <img src="img/icon-instagram.svg" alt="icon: instagram" class="social-network__icon">
-              </a>
-              <a target="_blank" rel="nofollow noopener" href="https://linkadd.in" class="social-network__link">
-                <img src="img/icon-in.svg" alt="icon: in" class="social-network__icon">
-              </a>
-            </div>
-            <!-- /.create__social-network social-network -->
+            <a href="https://twitter.com" class="social-network__link">
+              <img src="img/icon-twitter.svg" alt="icon: twitter" class="social-network__icon">
+            </a>
+            <a href="https://www.instagram.com" class="social-network__link">
+              <img src="img/icon-instagram.svg" alt="icon: instagram" class="social-network__icon">
+            </a>
+            <a href="https://linkadd.in" class="social-network__link">
+              <img src="img/icon-in.svg" alt="icon: in" class="social-network__icon">
+            </a>
+      
           </div>
-          <!-- /.footer__create -->
-    
-
-          <div class="footer__product">
-            <h3 class="footer__title">Продукт</h3>
-            <ul class="footer__list">
-              <li class="footer__item"><a href="#" class="footer__link">Лэндинг</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Функции</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Документация</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Скидки</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Расценки</a></li>
-            </ul>
-            <!-- /.footer__list -->
-          </div>
-          <!-- /.footer__product -->
-    
-
-          <div class="footer__service">
-            <h3 class="footer__title">Сервисы</h3>
-            <ul class="footer__list">
-              <li class="footer__item"><a href="#" class="footer__link">Документация</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Дизайн</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Темы</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Илюстрации</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">UI Kit</a></li>
-            </ul>
-            <!-- /.footer__list -->
-          </div>
-          <!-- .footer__service -->
-    
-
-          <div class="footer__company">
-            <h3 class="footer__title">Компания</h3>
-            <ul class="footer__list">
-              <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Условия</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
-            </ul>
-            <!-- /.footer__list -->
-          </div>
-          <!-- .footer__company-->
-    
-
-          <div class="footer__more">
-            <h3 class="footer__title">Еще..</h3>
-            <ul class="footer__list">
-              <li class="footer__item"><a href="#!" class="footer__link">Документация</a></li>
-              <li class="footer__item"><a href="#!" class="footer__link">Лицензия</a></li>
-              <li class="footer__item"><a href="#!" class="footer__link">Изменения</a></li>
-            </ul>
-            <!-- /.footer__list -->
-          </div>
-          <!-- .footer__more -->
-    
-
-          <div class="footer__bottom bottom">
-            <img src="img/like.svg" alt="icon: heart" class="footer__bottom-icone">
-            <p class="footer__bottom-text">Copyright © 2019. Crafted with love.</p>
-          </div>
-          <!-- /.footer__bottom -->
-    
+          <!-- /.create__social-network social-network -->
         </div>
-        <!-- /.footer__grid -->
+        <!-- /.footer__create -->
+  
+
+        <div class="footer__product">
+          <h3 class="footer__title">Продукт</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Лэндинг</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Функции</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Документация</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Скидки</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Расценки</a></li>
+          </ul>
+          <!-- /.footer__list -->
+        </div>
+        <!-- /.footer__product -->
+  
+
+        <div class="footer__service">
+          <h3 class="footer__title">Сервисы</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Документация</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Дизайн</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Темы</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Илюстрации</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">UI Kit</a></li>
+          </ul>
+          <!-- /.footer__list -->
+        </div>
+        <!-- .footer__service -->
+  
+
+        <div class="footer__company">
+          <h3 class="footer__title">Компания</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Условия</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+          </ul>
+          <!-- /.footer__list -->
+        </div>
+        <!-- .footer__company-->
+  
+
+        <div class="footer__more">
+          <h3 class="footer__title">Еще..</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#!" class="footer__link">Документация</a></li>
+            <li class="footer__item"><a href="#!" class="footer__link">Лицензия</a></li>
+            <li class="footer__item"><a href="#!" class="footer__link">Изменения</a></li>
+          </ul>
+          <!-- /.footer__list -->
+        </div>
+        <!-- .footer__more -->
+  
+
+        <div class="bottom footer__bottom">
+          <img src="img/like.svg" alt="icon: heart" class="footer__bottom-icone">
+          <p class="footer__bottom-text">Copyright © 2019. Crafted with love.</p>
+        </div>
+        <!-- /.footer__bottom -->
+  
       </div>
-      <!-- /.container footer__container -->
-    </footer>
-    <!-- /.footer -->
+      <!-- /.footer__grid -->
+    </div>
+    <!-- /.container footer__container -->
+  </footer>
+  <!-- /.footer -->
+
+  <a href="#" class="to-top">
+    <img src="img/return.png" alt="Наверх">
+  </a>
 
 
   <div class="modal">

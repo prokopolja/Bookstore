@@ -2,6 +2,8 @@ $(document).ready(function () {
   var categorySlider = new Swiper('.category-slider', {
     // Optional parameters
     loop: true,
+    slidesPerView: 4,
+    spaceBetween: 27,
 
     // Navigation arrows
     navigation: {
@@ -11,11 +13,13 @@ $(document).ready(function () {
     // Управление клавиатурой
       keyboard: true,
 
-
   });
+
   var unreleasedSlider = new Swiper('.unreleased-slider', {
     // Optional parameters
     loop: true,
+    slidesPerView: 5,
+    spaceBetween: 32,
 
     // Navigation arrows
     navigation: {
@@ -25,6 +29,7 @@ $(document).ready(function () {
     // Управление клавиатурой
     keyboard: true,
   });
+
 
   
   //Модальное окно
@@ -70,6 +75,9 @@ $(document).ready(function () {
     }
   });
 
+  // Закрытие кликом ВНЕ ОКНА
+ 
+
   // Обработка форм
   $('.form').each(function() {
     $(this).validate({
@@ -111,3 +119,5 @@ $(document).ready(function () {
   AOS.init();
 
 });
+
+
