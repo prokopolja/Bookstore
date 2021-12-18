@@ -11,7 +11,7 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 
 // Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
+$title = "Новое обращение Bookstore";
 $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
@@ -26,7 +26,7 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    // $mail->SMTPDebug = 2;
+    $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
@@ -57,4 +57,3 @@ else {$result = "error";}
 
 // Отображение результата
 header('Location: thankyou.html');
-
