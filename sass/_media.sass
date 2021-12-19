@@ -20,16 +20,29 @@
     &__card
       max-width: 400px
     &-best
+      display: flex
       flex-direction: column
     &__recommended
       max-width: 100%
     &__wrapper
+      display: flex
       flex-direction: column
+      margin-bottom: 80px  
       &-left
-        width: 100%  
-  
+        width: 100%
+    &__title
+      &-right
+        margin-top: 30px      
     &__top
-      max-height: 920px      
+      width: 100%  
+      &-item
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between  
+  .line
+    max-width: 960px    
+    margin: auto
+    margin-bottom: 50px
   .button
     &-more
       flex-basis: 80%
@@ -43,11 +56,9 @@
       height: 180px
       margin: 20px 12px 0 10px
     &-title
-      margin: 20px 0 10px 0  
-  .story
-    &-row
-      &__wrapper
-        width: 273px
+      margin: 20px 0 10px 0
+    &-name
+      margin-right: 5px     
       
   .item
     &-blog
@@ -75,7 +86,22 @@
         line-height: 30px
       &__text
         font-size: 15px
-        line-height: 21px  
+        line-height: 21px
+  .story
+    &-row
+      &__wrapper
+        width: 273px
+    .container
+      padding: 0 50px
+  .article
+    &__title
+      margin-right: 10px
+    &__text
+      margin-right: 10px
+  .articles  
+    &__block
+      &-left
+        margin-top: 10px                
   .footer
     &__grid
       grid-template-columns: repeat(5, 1fr ) 

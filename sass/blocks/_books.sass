@@ -4,22 +4,24 @@
     margin: auto
   &__wrapper
     display: flex
-    max-height: 943px
     justify-content: space-between
-    margin-bottom: 149px
+    margin-bottom: 79px
   &__recommended
     display: flex
     justify-content: space-between
     flex-wrap: wrap
     max-width: 751px 
   &__top
-    max-width: 360px
-    min-height: 941px
-    
+    display: flex
+    flex-direction: column
     &-wrapper
-      margin-bottom: 26px
       background-color: rgba(179, 186, 197, 0.1)
       border-radius: 8px
+      display: flex
+      flex-direction: column
+      width: 100%
+    &-item
+      padding-bottom: 15px  
   &__card
     display: flex
     max-width: 358px
@@ -55,18 +57,25 @@
       color: $button
       background-color: rgba(21, 101, 216, 0.1)
       padding: 26px
+  &__link    
     &-best  
-      flex-basis: 100%
+      display: block
       font-family: Roboto Condensed, sans-serif
       font-style: normal
       font-weight: bold
       font-size: 16px
       line-height: 20px 
+      letter-spacing: 0.2px
       color: #1565D8 
-      background-color: inherit
+      text-align: center
       text-transform: uppercase  
       text-decoration: none
-      padding: 0 121px 24px 126px
+      padding: 25px
+      border-top: 1px solid $line
+      margin: 0 10px
+      
+     
+
       
 
   &__title
@@ -161,12 +170,7 @@
   &-heart:hover
     fill: red  
 
-.books
-  &__button
-    flex-basis: 100% 
-    
-    
 .line
   border-bottom: 1px solid $line
-  margin: 0 10px 25px 10px
+  margin: 25px 10px 25px 10px
   

@@ -113,18 +113,7 @@ $(document).ready(function () {
   });
 
   // Закрытие кликом ВНЕ ОКНА
-  const modalOverlay = document.querySelector('.modal__overlay');
-  document.onclick = function(e){
-    if ( Event.target.className != 'modal__overlay' ) {
-        popup.style.display = 'none';
-    };
-  };
-  const modalDialog = document.querySelector('.modal__dialog');
-  document.onclick = function(e){
-    if ( Event.target.className != 'modal__dialog' ) {
-        popup.style.display = 'none';
-    };
-  };
+  
  
 
   // Обработка форм
