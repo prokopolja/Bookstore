@@ -1,20 +1,21 @@
 .category
+  &__container
+    position: relative 
     
   &-line
-    margin-bottom: 61px   
+    margin-bottom: 60px   
   &-slider
     position: relative 
     overflow: hidden
     &__wrapper
       position: relative
-      margin-bottom: 101px 
+      margin-bottom: 100px 
     &__item
       border: 1px solid $line
       display: flex
       flex-direction: column
       justify-content: space-between
       align-items: center
-      width: 264px
       height: 240px
       border-radius: 8px
       box-sizing: border-box
@@ -47,29 +48,22 @@
       margin-top: 0
       margin-bottom: 30px
     &__button
-      position: absolute
       width: 56px
       height: 56px
-      
-      top: 37%  
+      position: absolute
+      top: 26%  
       border: none
       cursor: pointer
       background-repeat: no-repeat
       background-position: center
       background-color: $secondary
       border-radius: 50%
-      box-shadow: 0px 12px 16px 
+      box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08)
       &--next
-        display: flex
-        align-items: center
-        justify-content: center
         right: 0
         transform: translate(50%, 10%)
         z-index: 103
       &--prev
-        display: flex
-        align-items: center
-        justify-content: center
         left: 0
         transform: translate(-50%, 10%)
         z-index: 103

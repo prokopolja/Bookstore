@@ -1,7 +1,7 @@
 $(document).ready(function () {
   var categorySlider = new Swiper('.category-slider', {
     // Optional parameters
-    loop: true,
+    loop: false,
     slidesPerView: 4,
     spaceBetween: 27,
 
@@ -14,12 +14,49 @@ $(document).ready(function () {
       keyboard: true,
 
   });
-
+  var themeSlider = new Swiper(".slider-theme__container", {
+    
+    slidesPerColumnFill: 'row',
+    loop: false,
+    navigation: {
+      nextEl: ".slide-button--next",
+      prevEl: ".slide-button--prev",
+    },  
+    
+    simulateTouch: true,
+    grabCursor: true,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+    },
+    
+    breakpoints: {
+      320: {slidesPerView: 2, slidesPerColumn: 2},
+      510: {slidesPerView: 3, slidesPerColumn: 2},      
+      768: {slidesPerView: 3, slidesPerColumn: 1, spaceBetween: 0},
+      1200: {slidesPerView: 4, slidesPerColumn: 1, spaceBetween: 27}
+    },
+  });
   var unreleasedSlider = new Swiper('.unreleased-slider', {
     // Optional parameters
-    loop: true,
+    loop: false,
     slidesPerView: 5,
     spaceBetween: 32,
+    simulateTouch: true,
+    grabCursor: true,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+    },
+    
+    breakpoints: {
+      320: {slidesPerView: 1},
+      576: {slidesPerView: 2, spaceBetween: 25},
+      768: {slidesPerView: 4},
+      1201: {slidesPerView: 5}
+    },
 
     // Navigation arrows
     navigation: {
@@ -76,6 +113,18 @@ $(document).ready(function () {
   });
 
   // Закрытие кликом ВНЕ ОКНА
+  const modalOverlay = document.querySelector('.modal__overlay');
+  document.onclick = function(e){
+    if ( Event.target.className != 'modal__overlay' ) {
+        popup.style.display = 'none';
+    };
+  };
+  const modalDialog = document.querySelector('.modal__dialog');
+  document.onclick = function(e){
+    if ( Event.target.className != 'modal__dialog' ) {
+        popup.style.display = 'none';
+    };
+  };
  
 
   // Обработка форм

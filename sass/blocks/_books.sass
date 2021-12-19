@@ -2,11 +2,11 @@
   &__container
     max-width: 1143px
     margin: auto
-  &-best
+  &__wrapper
     display: flex
     max-height: 943px
     justify-content: space-between
-    margin-bottom: 79px
+    margin-bottom: 149px
   &__recommended
     display: flex
     justify-content: space-between
@@ -15,10 +15,11 @@
   &__top
     max-width: 360px
     min-height: 941px
-    background-color: rgba(179, 186, 197, 0.1)
-    border-radius: 8px
+    
     &-wrapper
       margin-bottom: 26px
+      background-color: rgba(179, 186, 197, 0.1)
+      border-radius: 8px
   &__card
     display: flex
     max-width: 358px
@@ -26,8 +27,9 @@
     border: 1px solid $line 
     border-radius: 8px
     margin-left: 4px
-    margin-bottom: 12px
-    &-six, &-five
+    margin-bottom: 32px
+    &--bg-2
+      margin-bottom: 27px
 
     &-wrapper
       border: none 
@@ -38,30 +40,59 @@
   &__img  
     border-radius: 8px
     margin: 11px 20px 9px 11px 
-  &__button
+  &__button 
+    &-more
+      flex-basis: 100% 
+      font-family: Roboto Condensed, sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px 
+      text-transform: uppercase 
+      border-radius: 8px
+      border: none
+      cursor: pointer
+      color: $button
+      background-color: rgba(21, 101, 216, 0.1)
+      padding: 26px
+    &-best  
+      flex-basis: 100%
+      font-family: Roboto Condensed, sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px 
+      color: #1565D8 
+      background-color: inherit
+      text-transform: uppercase  
+      text-decoration: none
+      padding: 0 121px 24px 126px
       
+
+  &__title
+    display: flex
+    justify-content: space-between 
+    margin-left: 5px
+    margin-bottom: 30px
+    &-left
+      margin: 0 0 30px 4px
+      font-family: 'Roboto Condensed', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 32px
+      line-height: 40px
+      color: $dark
+      letter-spacing: 0.2px
+    &-right
+      margin: 0 0 30px 1px
+      font-family: 'Roboto Condensed', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 32px
+      line-height: 40px
+      letter-spacing: 0.2px
+      color: $dark
       
-.title
-  display: flex
-  justify-content: space-between
-  color: $dark 
-  margin-left: 5px
-  margin-bottom: 30px
-  
-  &-left
-    margin: 0
-    font-family: 'Roboto Condensed', sans-serif
-    font-style: normal
-    font-weight: bold
-    font-size: 32px
-    line-height: 40px
-  &-right
-    margin: 0 202px 0 0
-    font-family: 'Roboto Condensed', sans-serif
-    font-style: normal
-    font-weight: bold
-    font-size: 32px
-    line-height: 40px
 .card
   &-photo
     border-radius: 8px
@@ -129,33 +160,7 @@
     cursor: pointer
   &-heart:hover
     fill: red  
-.button
-  &-more
-    flex-basis: 100% 
-    font-family: Roboto Condensed, sans-serif
-    font-style: normal
-    font-weight: bold
-    font-size: 16px
-    line-height: 20px 
-    text-transform: uppercase 
-    border-radius: 8px
-    border: none
-    cursor: pointer
-    color: $button
-    background-color: rgba(21, 101, 216, 0.1)
-    padding: 13px 275px 17px 281px
-  &-best  
-    flex-basis: 100%
-    font-family: Roboto Condensed, sans-serif
-    font-style: normal
-    font-weight: bold
-    font-size: 16px
-    line-height: 20px 
-    color: #1565D8 
-    background-color: inherit
-    text-transform: uppercase  
-    text-decoration: none
-    padding: 0 121px 24px 126px
+
 .books
   &__button
     flex-basis: 100% 
