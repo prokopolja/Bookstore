@@ -5,6 +5,14 @@ $(document).ready(function () {
     slidesPerView: 4,
     spaceBetween: 27,
 
+    
+    breakpoints: {
+      320: {slidesPerView: 2, slidesPerColumn: 2},
+      510: {slidesPerView: 3, slidesPerColumn: 2},      
+      768: {slidesPerView: 3, spaceBetween: 20},
+      1201: {slidesPerView: 4, slidesPerColumn: 1, spaceBetween: 27}
+    },
+
     // Navigation arrows
     navigation: {
       nextEl: '.category-slider__button--next',
@@ -31,12 +39,7 @@ $(document).ready(function () {
       pageUpDown: true,
     },
     
-    breakpoints: {
-      320: {slidesPerView: 2, slidesPerColumn: 2},
-      510: {slidesPerView: 3, slidesPerColumn: 2},      
-      768: {slidesPerView: 3, slidesPerColumn: 1, spaceBetween: 0},
-      1200: {slidesPerView: 4, slidesPerColumn: 1, spaceBetween: 27}
-    },
+    
   });
   var unreleasedSlider = new Swiper('.unreleased-slider', {
     // Optional parameters
@@ -54,7 +57,8 @@ $(document).ready(function () {
     breakpoints: {
       320: {slidesPerView: 1},
       576: {slidesPerView: 2, spaceBetween: 25},
-      768: {slidesPerView: 4},
+      768: {slidesPerView: 3, spaceBetween: 25},
+      993: {slidesPerView: 4},
       1201: {slidesPerView: 5}
     },
 
